@@ -1,0 +1,211 @@
+<html lang="ko">
+<head>
+    <!-- bootstartp v5.2.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- JBU -->
+    <title>JBU</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQQ3WNQ46G"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BQQ3WNQ46G');
+    </script>
+
+<!-- Navigation -->
+<nav class="navbar bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html" style="margin-left: 20px;">JBU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">JBU</h5>
+          <button type="button" class="btn-close btn-cloas-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Portfolio
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/project.html">project</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="https://github.com/cutepassions" target="_blank">Go to my github</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+</head>
+
+<body>
+
+<!-- Main -->
+<!-- logo -->
+<div class="main" align="center">
+  <div class="container-fluid">
+    <a href="/index.html">
+      <img src="./img/home_logo.png" class="img-fluid" title="메인화면으로 이동" alt="로고"/>
+    </a>
+  </div>
+
+
+  <div class="container-fluid">
+    <h2>개인 포트폴리오</h1>
+  </div>
+  
+  <!-- about -->
+  <div class="about container-fluid rounded border border-4">
+    <div class="row center">
+        <div class="col-sm-offset-4 col-sm-4">
+          <img class="img-thumbnail rounded"src="img/jbu.jpg" title="jbu" alt="프로필 사진"/>
+        </div>
+        <div class="col-sm-8 align-self-center about2">
+          <li>이름 : 진병욱</li>
+          <li>나이 : 25세</li>
+          <li>학력 : 우석대학교 재학중</li>
+        </div>
+    </div>
+  </div>
+
+  <!-- stack -->
+  <div class="container-fluid rounded border border-4 stack">
+    <h5>보유 기술</h5>
+    <div class="row center">
+      <div class="col-sm-6 align-self-center" style="padding-bottom: 15px; text-align: left;">
+        <div>Python
+        <progress max="100" min="0" value="80" style="padding-left:5px;"></progress>
+        </div>
+        <div>JAVA
+          <progress max="100" min="0" value="40" style="padding-left:5px;"></progress>
+        </div>
+        <div>Linux
+          <progress max="100" min="0" value="80" style="padding-left:5px;"></progress>
+        </div>
+        <div>Git
+          <progress max="100" min="0" value="40" style="padding-left:5px;"></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- carousel -->
+  <div class="container-fluid rounded border border-4 carousel">
+    <div>
+    <h4>[ 프로젝트 ]</h4>
+      <button type="button" class="btn btn-dark" onclick="location.href='project.html'">이동</button>
+    </div>
+    <div class="row center">
+      <div class="col-sm-12">
+        <div id="carouselExampleDark" class="carousel carousel-dark carousel-fade" data-bs-ride="carousel"">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active"  data-bs-interval="5000">
+              <a href="https://www.jbu.co.kr/CIproject" target="_blank">
+                <img src="img/4.png" class="d-block w-100" alt="취업 공고 게시판" title="취업 공고 게시판">
+              </a>
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <a href="https://www.jbu.co.kr/~jsleeproject" target="_blank">
+                <img src="img/1.png" class="d-block w-100" alt="강의 평가 웹사이트" title="강의 평가 웹사이트">
+              </a>
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <img src="img/2.png" class="d-block w-100" alt="대학교 위치 앱" title="대학교 위치 앱">
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <img src="img/3.png" class="d-block w-100" alt="취약 서버 스캐너" title="취약 서버 스캐너">
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <img src="img/5.png" class="d-block w-100" alt="포렌식 분석 프로그램" title="포렌식 분석 프로그램">
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <a href="https://www.jbu.co.kr/~myblog" target="_blank">
+                <img src="img/myblog.png" class="d-block w-100" alt="myblog" title="myblog">
+              </a>
+            </div>
+            <div class="carousel-item"  data-bs-interval="5000">
+              <a href="https://www.jbu.co.kr/~myblog" target="_blank">
+                <img src="img/myblog.png" class="d-block w-100" alt="myblog(시큐어코딩)" title="myblog(시큐어코딩)">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">이전</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">다음</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row rounded border border-4 certificate">
+    <h4>보유 자격증</h4>
+    <div class="col-4" style="padding-bottom: 10;">
+      <div class="list-group" id="list-tab" role="tablist" style="font-size: 15;">
+        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">네트워크관리사</a>
+        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Cos Pro</a>
+        <!--a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Settings</a-->
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+          2021.11.23 네트워크 관리사 2급 취득<br>
+          <a href="https://www.icqa.or.kr/cn/page/network" target="_blank">링크</a>
+        </div>
+        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+          2021.11.28 Cos Pro 2급 Python 취득<br>
+          <a href="https://www.ybmit.com/cos_pro/cos_pro_info.jsp" target="_blank">링크</a>
+        </div>
+        <!--div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div-->
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+
+<!-- footer -->
+<footer class="footer container-fluid navbar-fixed-bottom text-center bg-dark p-5 text-bg-dark" style="">
+  <p>Copyright 2022 jbu All rights reserved.</p>
+  <p>Contact : jbu0430@gmail.com</p>
+</footer>
+
+</html>
